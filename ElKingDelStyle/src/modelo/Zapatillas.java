@@ -11,17 +11,17 @@ package modelo;
  */
 public class Zapatillas extends Productos {
     
-    private String color;
+    private String marca;
     private int talla;
 
-    public Zapatillas(String color, int talla, int Cod, String Nombre, String Rut, String Producto)  {
-        super(Cod,Nombre, Rut, Producto);
-        this.color = color;
+    public Zapatillas(String marca, int talla, String cod, int cantidad, String producto) {
+        super(cod, cantidad, producto);
+        this.marca = marca;
         this.talla = talla;
     }
 
     public String getColor() {
-        return color;
+        return marca;
     }
 
     public int getTalla() {
@@ -29,7 +29,7 @@ public class Zapatillas extends Productos {
     }
 
     public void setColor(String color) {
-        this.color = color;
+        this.marca = color;
     }
 
     public void setTalla(int talla) {

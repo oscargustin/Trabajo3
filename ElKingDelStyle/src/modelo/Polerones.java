@@ -11,30 +11,32 @@ package modelo;
  */
 public class Polerones extends Productos{
     //private int codPoleron;
-    private String color;
-    private int talla;
+    private String color, cierre;
 
-    public Polerones(String color, int talla, int Cod, String Nombre, String Rut, String Producto) {
-        super(Cod, Nombre, Rut, Producto);
+    public Polerones(String color, String cierre, String cod, int cantidad, String producto) {
+        super(cod, cantidad, producto);
         this.color = color;
-        this.talla = talla;
+        this.cierre = cierre;
     }
 
     public String getColor() {
         return color;
     }
 
-    public int getTalla() {
-        return talla;
+    public String getCierre() {
+        return cierre;
     }
 
     public void setColor(String color) {
         this.color = color;
     }
 
-    public void setTalla(int talla) {
-        this.talla = talla;
+    public void setCierre(String cierre) {
+        this.cierre = cierre;
     }
+
+
     
+
     
 }

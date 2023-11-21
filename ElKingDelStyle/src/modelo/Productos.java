@@ -2,44 +2,40 @@
 package modelo;
 
 
-public class Productos {
-    private int cod;
-    private String nombre,rut,producto;
+public abstract class Productos {
+    private int cantidad;
+    private String cod,producto;
 
-    public Productos(int cod, String nombre, String rut, String producto) {
+    public Productos(String cod, int cantidad, String producto) {
         this.cod = cod;
-        this.nombre = nombre;
-        this.rut = rut;
+        this.cantidad = cantidad;
         this.producto = producto;
     }
 
-    public int getCod() {
+    public void setCod(String cod) {
+        this.cod = cod;
+    }
+
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
+    }
+
+    public void setProducto(String producto) {
+        this.producto = producto;
+    }
+
+    public String getCod() {
         return cod;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public String getRut() {
-        return rut;
+    public int getCantidad() {
+        return cantidad;
     }
 
     public String getProducto() {
         return producto;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public void setRut(String rut) {
-        this.rut = rut;
-    }
-
-    public void setProducto(String producto) {
-        this.producto = producto;
-    }
     
     
 }
